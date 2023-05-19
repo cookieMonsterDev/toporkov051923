@@ -12,10 +12,10 @@ export const globalStyle = css`
     font-style: normal;
   }
 
-  /* #__next {
+  #__next {
     width: 100vw;
     height: 100vh;
-  } */
+  }
 
   a {
     text-decoration: none;
@@ -23,6 +23,10 @@ export const globalStyle = css`
 
   & .MuiMenu-list {
     padding: 0;
+  }
+
+  & .MuiMenu-paper {
+    background-color: red;
   }
 
   &:root {

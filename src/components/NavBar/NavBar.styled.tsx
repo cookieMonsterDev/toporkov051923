@@ -1,7 +1,6 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { Button } from "@mui/material";
-import Link from "next/link";
 
 export const Container = styled.nav`
   position: relative;
@@ -17,7 +16,13 @@ export const Container = styled.nav`
   }
 `;
 
-export const LeftContainer = styled.div``;
+export const LeftContainer = styled.div`
+  display: flex;
+  
+  @media only screen and (max-width: 70rem) {
+    flex: 1;
+  }
+`;
 
 export const RightContainer = styled.div`
   margin-left: auto;
@@ -26,7 +31,21 @@ export const RightContainer = styled.div`
   gap: 5px;
 `;
 
-export const Logo = styled(Link)``;
+export const SelectContainer = styled.div`
+  @media only screen and (max-width: 70rem) {
+    visibility: hidden;
+    display: none;
+  }
+`;
+
+export const Logo = styled.div`
+  color: red;
+  margin-right: 40px;
+
+  @media only screen and (max-width: 70rem) {
+    margin: auto;
+  }
+`;
 
 export const TabsContainer = styled.ul`
   list-style: none;
