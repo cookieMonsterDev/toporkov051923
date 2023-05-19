@@ -108,7 +108,7 @@ export const NavBarComponent: React.FC<NavBarProps> = ({ tabs }) => {
           <Collapse in={open} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               {selectOptions.map((e) => (
-                <ListItemButton onClick={() => handleChange(e)}>
+                <ListItemButton onClick={() => handleChange(e)} key={e.label}>
                   <ListItemIcon>
                     <Image
                       src={`/${e.label.toLowerCase()}.png`}

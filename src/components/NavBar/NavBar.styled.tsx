@@ -126,6 +126,7 @@ export const SideMenuContainer = styled.div<{ isShow?: boolean }>`
   background-color: var(--primary);
   transform: translateX(-100%);
   transition: all 700ms;
+  z-index: 10000;
 
   ${({ isShow }) =>
     isShow &&
